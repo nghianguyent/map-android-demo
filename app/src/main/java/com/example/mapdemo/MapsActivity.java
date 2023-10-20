@@ -144,7 +144,7 @@ public class MapsActivity extends FragmentActivity implements
                     .withListener(this)
                     .alternativeRoutes(true)
                     .waypoints(Start, End)
-                    .key("AIzaSyBzAsxrUnRWD5b5izxuWtIIWU1tAY_gNkU")  //also define your api key here.
+                    .key("api key")  //also define your api key here.
                     .build();
             routing.execute();
         }
