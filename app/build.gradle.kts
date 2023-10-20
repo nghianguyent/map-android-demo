@@ -4,6 +4,11 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("C:\\Users\\Admin\\.android\\debug.keystore")
+        }
+    }
     namespace = "com.example.mapdemo"
     compileSdk = 34
 
@@ -21,12 +26,13 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.getByName("debug")
+        }
+        getByName("debug") {
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
+
     buildFeatures {
         viewBinding = true
     }
@@ -42,4 +48,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     implementation("com.google.android.gms:play-services-location:21.0.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation( "com.github.jd-alexander:library:1.1.0")
 }
