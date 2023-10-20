@@ -43,6 +43,7 @@ import com.google.android.material.snackbar.Snackbar;
 import java.security.Permission;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.logging.Logger;
 
 public class MapsActivity extends FragmentActivity implements
@@ -73,7 +74,9 @@ public class MapsActivity extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
         map = findViewById(R.id.map);
+
         fusedClient = LocationServices.getFusedLocationProviderClient(this);
         getLocation();
     }
@@ -112,7 +115,7 @@ public class MapsActivity extends FragmentActivity implements
         }
         gMap.setMyLocationEnabled(true);
         LatLng latLng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
-        MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("My location");
+
         gMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
 
         gMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 16));
