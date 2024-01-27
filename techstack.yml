@@ -1,0 +1,69 @@
+repo_name: nghianguyent/map-android-demo
+report_id: 42e565501fac75a443cb69e964e83190
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-27T14:02:22+00:00'
+requested_by: nghianguyent
+provider: github
+branch: Main
+detected_tools_count: 5
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/nghianguyent/map-android-demo
+  detection_source: Repo Metadata
+- name: Android SDK
+  description: An SDK that provides you the API libraries and developer tools necessary
+    to build, test, and debug apps for Android.
+  website_url: http://developer.android.com
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1010/m8jf0po4imu8t5eemjdd.png
+  detection_source_url: https://github.com/nghianguyent/map-android-demo/blob/Main/app/build.gradle.kts
+  detection_source: app/build.gradle.kts
+  last_updated_by: nghianguyent
+  last_updated_on: 2023-10-20 15:05:31.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/nghianguyent/map-android-demo
+  detection_source: Repo Metadata
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source_url: https://github.com/nghianguyent/map-android-demo/blob/Main/gradlew
+  detection_source: gradlew
+  last_updated_by: nghia nguyen
+  last_updated_on: 2023-10-19 12:48:39.000000000 Z
+- name: Android OS
+  description: An open source mobile operating system by Google
+  website_url: https://www.android.com
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/9586/ZvmtaSXW_400x400.jpg
+  detection_source_url: https://github.com/nghianguyent/map-android-demo/blob/Main/app/build.gradle.kts
+  detection_source: app/build.gradle.kts
+  last_updated_by: nghianguyent
+  last_updated_on: 2023-10-20 15:05:31.000000000 Z
